@@ -1,0 +1,119 @@
+{
+ "ethnicity": {
+  "white_race_women": 3558,
+  "white_unknown_ethnicity": 1491,
+  "white_unknown_pct": 41.9,
+  "hispanic_share_where_known_pct": 18.1,
+  "all_unknown_ethnicity_pct": 41.6,
+  "hispanic_recovered_from_unknown_race": 934,
+  "scenarios": {
+   "as mapped": {
+    "Hispanic": 1.62,
+    "White": 2.58
+   },
+   "unknown ethnicity left out": {
+    "Hispanic": 1.62,
+    "White": 4.85
+   },
+   "split in known proportion": {
+    "Hispanic": 1.38,
+    "White": 2.82
+   },
+   "all Hispanic": {
+    "Hispanic": 0.82,
+    "White": 4.85
+   }
+  },
+  "hispanic_range": [
+   0.82,
+   1.62
+  ],
+  "white_range": [
+   2.58,
+   4.85
+  ]
+ },
+ "missing_race": {
+  "unknown_women": 523,
+  "unknown_pct": 2.0,
+  "unknown_pct_by_district": {
+   "CENTRAL": 2.8,
+   "EASTERN": 1.7,
+   "NORTHEAST": 1.6,
+   "NORTHERN": 2.1,
+   "NORTHWEST": 1.3,
+   "SOUTHEAST": 2.4,
+   "SOUTHERN": 3.0,
+   "SOUTHWEST": 2.2,
+   "WESTERN": 1.2
+  },
+  "black_share_of_women_by_district": {
+   "SOUTHEAST": 29.2,
+   "CENTRAL": 44.7,
+   "EASTERN": 80.5,
+   "NORTHEAST": 77.6,
+   "NORTHERN": 48.9,
+   "WESTERN": 87.3,
+   "NORTHWEST": 70.7,
+   "SOUTHWEST": 83.9,
+   "SOUTHERN": 38.8
+  },
+  "correlation_with_black_share": -0.76,
+  "ratios_redistributed": {
+   "Hispanic": 1.61,
+   "White": 2.57,
+   "Asian": 5.61
+  },
+  "ratios_as_mapped": {
+   "Hispanic": 1.62,
+   "White": 2.58,
+   "Asian": 5.62
+  }
+ },
+ "districts": {
+  "placed_pct": 99.9,
+  "unplaced": 65,
+  "boundaries": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Police_Districts_New/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson"
+ },
+ "counted": {
+  "codes": {
+   "simple": [
+    "4E"
+   ],
+   "aggravated": [
+    "4A",
+    "4B",
+    "4C",
+    "4D",
+    "9S",
+    "3"
+   ]
+  },
+  "victims": 47588,
+  "women": 25691,
+  "by_kind": {
+   "simple": 28435,
+   "aggravated": 19153
+  },
+  "shootings": 1739,
+  "not_compared": {
+   "American Indian or Alaska Native": 148,
+   "Native Hawaiian or Pacific Islander": 76
+  },
+  "age_unknown": 396,
+  "sex_unknown": 348
+ },
+ "least_stable": {
+  "group": "Asian",
+  "change_pct": 39,
+  "others_max_pct": 11,
+  "largest": [
+   "aggravated",
+   54
+  ],
+  "victims": {
+   "Legacy system, 2022 to 2024": 151,
+   "NIBRS, January 2025 to August 2026": 59
+  }
+ }
+}

@@ -1,0 +1,483 @@
+{
+ "focus": {
+  "group": "Black",
+  "sex": "F",
+  "label": "Black women"
+ },
+ "window": {
+  "start": "2022-01-01",
+  "end": "2024-12-31"
+ },
+ "years": 3.0,
+ "spans": {
+  "2022": 1.0,
+  "2023": 1.0,
+  "2024": 1.0
+ },
+ "groups": [
+  "Black",
+  "Hispanic",
+  "White",
+  "Asian"
+ ],
+ "kinds": [
+  "aggravated",
+  "simple"
+ ],
+ "counts": {
+  "total": 47588,
+  "known": 45495,
+  "by_kind": {
+   "simple": 28435,
+   "aggravated": 19153
+  },
+  "unknown_race": 2038,
+  "unknown_sex": 348,
+  "unknown_race_share_by_sex": {
+   "F": 2.3,
+   "M": 5.4
+  },
+  "raw_race_values": {
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE": 148,
+   "UNKNOWN": 147,
+   "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER": 76
+  },
+  "median_age": 32.0,
+  "located": 47531,
+  "districts": 9
+ },
+ "rates": {
+  "Black": {
+   "F": 3605,
+   "M": 3218
+  },
+  "Hispanic": {
+   "F": 2229,
+   "M": 2515
+  },
+  "White": {
+   "F": 1397,
+   "M": 1606
+  },
+  "Asian": {
+   "F": 641,
+   "M": 1599
+  }
+ },
+ "ratios": {
+  "Hispanic": 1.62,
+  "White": 2.58,
+  "Asian": 5.62
+ },
+ "ratio_to_other_sex": {
+  "Black": 1.12,
+  "Hispanic": 0.89,
+  "White": 0.87,
+  "Asian": 0.4
+ },
+ "sex_share": {
+  "aggravated": {
+   "Black": 47.4,
+   "Hispanic": 35.9,
+   "White": 41.5,
+   "Asian": 25.7
+  },
+  "simple": {
+   "Black": 65.5,
+   "Hispanic": 51.8,
+   "White": 50.6,
+   "Asian": 33.6
+  },
+  "all": {
+   "Black": 57.9,
+   "Hispanic": 46.0,
+   "White": 47.5,
+   "Asian": 30.9
+  }
+ },
+ "race_coding_bound": {
+  "combo_ratio": 1.05,
+  "ratios_worst_case": {
+   "Hispanic": 1.54,
+   "White": 2.46,
+   "Asian": 5.35
+  },
+  "note": "if every multiracial Black resident is recorded as Black, the denominator grows by 5%"
+ },
+ "by_year_counts": {
+  "2022": {
+   "F": 8313,
+   "M": 6845
+  },
+  "2023": {
+   "F": 8531,
+   "M": 6976
+  },
+  "2024": {
+   "F": 8265,
+   "M": 6565
+  }
+ },
+ "tests": {
+  "age": {
+   "labels": [
+    "0-4",
+    "5-9",
+    "10-14",
+    "15-17",
+    "18-19",
+    "20-24",
+    "25-29",
+    "30-34",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65-74",
+    "75-84",
+    "85+"
+   ],
+   "rates": {
+    "Black": [
+     297,
+     675,
+     2577,
+     5841,
+     6977,
+     8998,
+     8301,
+     7158,
+     5010,
+     2708,
+     1572,
+     594,
+     231,
+     144
+    ],
+    "Hispanic": [
+     67,
+     177,
+     1114,
+     2553,
+     4172,
+     5377,
+     5259,
+     4436,
+     2912,
+     1528,
+     630,
+     452,
+     null,
+     null
+    ],
+    "White": [
+     50,
+     137,
+     654,
+     1459,
+     1228,
+     2228,
+     1707,
+     1703,
+     2335,
+     1956,
+     1124,
+     401,
+     297,
+     58
+    ],
+    "Asian": [
+     null,
+     null,
+     null,
+     null,
+     140,
+     1177,
+     698,
+     786,
+     379,
+     996,
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "standardized": {
+    "Black": 3752,
+    "Hispanic": 2154,
+    "White": 1301,
+    "Asian": 369
+   },
+   "crude": {}
+  },
+  "location": {
+   "districts": [
+    {
+     "district": "CENTRAL",
+     "focus_rate": 9914,
+     "other_rate": 1959,
+     "ratio": 5.06,
+     "focus_n": 2374,
+     "focus_pop": 7982
+    },
+    {
+     "district": "EASTERN",
+     "focus_rate": 4030,
+     "other_rate": 2472,
+     "ratio": 1.63,
+     "focus_n": 2449,
+     "focus_pop": 20257
+    },
+    {
+     "district": "NORTHEAST",
+     "focus_rate": 1883,
+     "other_rate": 803,
+     "ratio": 2.34,
+     "focus_n": 2549,
+     "focus_pop": 45124
+    },
+    {
+     "district": "NORTHERN",
+     "focus_rate": 2844,
+     "other_rate": 633,
+     "ratio": 4.49,
+     "focus_n": 1803,
+     "focus_pop": 21134
+    },
+    {
+     "district": "NORTHWEST",
+     "focus_rate": 2593,
+     "other_rate": 707,
+     "ratio": 3.67,
+     "focus_n": 2347,
+     "focus_pop": 30173
+    },
+    {
+     "district": "SOUTHEAST",
+     "focus_rate": 5535,
+     "other_rate": 2040,
+     "ratio": 2.71,
+     "focus_n": 1321,
+     "focus_pop": 7956
+    },
+    {
+     "district": "SOUTHERN",
+     "focus_rate": 4897,
+     "other_rate": 1923,
+     "ratio": 2.55,
+     "focus_n": 1667,
+     "focus_pop": 11348
+    },
+    {
+     "district": "SOUTHWEST",
+     "focus_rate": 3788,
+     "other_rate": 3687,
+     "ratio": 1.03,
+     "focus_n": 2490,
+     "focus_pop": 21914
+    },
+    {
+     "district": "WESTERN",
+     "focus_rate": 5064,
+     "other_rate": 2632,
+     "ratio": 1.92,
+     "focus_n": 3221,
+     "focus_pop": 21203
+    }
+   ],
+   "unmatched_district_names": [],
+   "actual_rate": 3605,
+   "expected_if_other_rates": 1664
+  },
+  "type": {
+   "aggravated": {
+    "Black": 1250,
+    "Hispanic": 631,
+    "White": 410,
+    "Asian": 187
+   },
+   "simple": {
+    "Black": 2355,
+    "Hispanic": 1598,
+    "White": 987,
+    "Asian": 454
+   }
+  },
+  "time": {
+   "2022": {
+    "Black": 3611,
+    "Hispanic": 1831,
+    "White": 1437,
+    "Asian": 548
+   },
+   "2023": {
+    "Black": 3690,
+    "Hispanic": 2347,
+    "White": 1352,
+    "Asian": 752
+   },
+   "2024": {
+    "Black": 3513,
+    "Hispanic": 2508,
+    "White": 1402,
+    "Asian": 624
+   }
+  },
+  "premises": {
+   "labels": [
+    "Other/Residential",
+    "Street",
+    "School",
+    "Shed/Garage",
+    "Convenience Store",
+    "Unknown",
+    "Restaurant",
+    "Drug Store / Med  Bl"
+   ],
+   "focus": [
+    62.0,
+    22.1,
+    3.4,
+    1.4,
+    1.4,
+    1.2,
+    1.0,
+    1.0
+   ],
+   "other": [
+    56.0,
+    23.7,
+    1.6,
+    1.7,
+    2.5,
+    1.2,
+    1.8,
+    1.4
+   ]
+  },
+  "weapons": {
+   "labels": [
+    "Firearm",
+    "Knife or cutting",
+    "Blunt object or vehicle",
+    "Hands, fists, feet",
+    "Other or unknown"
+   ],
+   "focus": [
+    7.6,
+    4.2,
+    5.0,
+    73.9,
+    9.4
+   ],
+   "other": [
+    4.7,
+    3.6,
+    5.6,
+    76.8,
+    9.2
+   ]
+  },
+  "n": {
+   "focus": 20233,
+   "other": 4876
+  }
+ },
+ "model": {
+  "cells": 5010,
+  "coverage": {
+   "focus": 96.7,
+   "other": 88.8
+  },
+  "located": 24714,
+  "ladder": [
+   {
+    "model": "group only",
+    "rate_ratio": 2.62,
+    "ci_low": 2.38,
+    "ci_high": 2.87,
+    "controls": "focus"
+   },
+   {
+    "model": "+ age",
+    "rate_ratio": 3.03,
+    "ci_low": 2.75,
+    "ci_high": 3.32,
+    "controls": "focus + C(band)"
+   },
+   {
+    "model": "+ year",
+    "rate_ratio": 3.03,
+    "ci_low": 2.75,
+    "ci_high": 3.32,
+    "controls": "focus + C(band) + C(year)"
+   },
+   {
+    "model": "+ district",
+    "rate_ratio": 3.52,
+    "ci_low": 3.21,
+    "ci_high": 3.85,
+    "controls": "focus + C(band) + C(year) + C(district)"
+   },
+   {
+    "model": "+ tract socioeconomics",
+    "rate_ratio": 2.84,
+    "ci_low": 2.57,
+    "ci_high": 3.15,
+    "controls": "focus + C(band) + C(year) + C(district) + poverty + log_income + unemployment + renters + log_density"
+   }
+  ],
+  "by_kind": {
+   "aggravated": {
+    "rate_ratio": 3.18,
+    "ci_low": 2.82,
+    "ci_high": 3.58
+   },
+   "simple": {
+    "rate_ratio": 2.71,
+    "ci_low": 2.43,
+    "ci_high": 3.02
+   }
+  },
+  "pairwise": {
+   "Hispanic": {
+    "crude": {
+     "rate_ratio": 2.17,
+     "ci_low": 1.87,
+     "ci_high": 2.53
+    },
+    "adjusted": {
+     "rate_ratio": 2.9,
+     "ci_low": 2.55,
+     "ci_high": 3.3
+    }
+   },
+   "White": {
+    "crude": {
+     "rate_ratio": 3.04,
+     "ci_low": 2.74,
+     "ci_high": 3.36
+    },
+    "adjusted": {
+     "rate_ratio": 3.09,
+     "ci_low": 2.76,
+     "ci_high": 3.46
+    }
+   },
+   "Asian": {
+    "crude": {
+     "rate_ratio": 11.07,
+     "ci_low": 8.43,
+     "ci_high": 14.53
+    },
+    "adjusted": {
+     "rate_ratio": 17.85,
+     "ci_low": 13.33,
+     "ci_high": 23.9
+    }
+   }
+  },
+  "sensitivity": {},
+  "explained_pct": -14
+ }
+}

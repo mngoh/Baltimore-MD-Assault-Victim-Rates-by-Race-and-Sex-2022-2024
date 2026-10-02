@@ -1,0 +1,373 @@
+{
+ "file": "data/raw/bpd_part1_legacy.csv",
+ "rows": 644737,
+ "columns": [
+  "RowID",
+  "CCNumber",
+  "CrimeDateTime",
+  "CrimeCode",
+  "Description",
+  "Inside_Outside",
+  "Weapon",
+  "Post",
+  "Gender",
+  "Age",
+  "Race",
+  "Ethnicity",
+  "Location",
+  "Old_District",
+  "New_District",
+  "Neighborhood",
+  "Latitude",
+  "Longitude",
+  "GeoLocation",
+  "PremiseType",
+  "Total_Incidents",
+  "lon",
+  "lat"
+ ],
+ "roles": {
+  "id": {
+   "field": "RowID",
+   "blank_pct": 0.0,
+   "distinct": 644737,
+   "duplicate_rows": 0
+  },
+  "date": {
+   "field": "CrimeDateTime",
+   "blank_pct": 0.0,
+   "distinct": 420905,
+   "parses_pct": 100.0,
+   "range": [
+    "1997-11-18",
+    "2024-12-29"
+   ]
+  },
+  "code": {
+   "field": "CrimeCode",
+   "blank_pct": 0.0,
+   "distinct": 90,
+   "top": {
+    "4E": 118910,
+    "6D": 74607,
+    "7A": 59730,
+    "5A": 49931,
+    "6J": 36004
+   }
+  },
+  "desc": {
+   "field": "Description",
+   "blank_pct": 0.0,
+   "distinct": 13,
+   "top": {
+    "LARCENY": 143753,
+    "COMMON ASSAULT": 118910,
+    "BURGLARY": 83658,
+    "LARCENY FROM AUTO": 79085,
+    "AGG. ASSAULT": 74320
+   }
+  },
+  "weapon": {
+   "field": "Weapon",
+   "blank_pct": 73.7,
+   "distinct": 31,
+   "blank_codes": {
+    "NA": 389434
+   }
+  },
+  "sex": {
+   "field": "Gender",
+   "blank_pct": 16.0,
+   "distinct": 3,
+   "blank_codes": {
+    "NA": 7059
+   },
+   "subject": "victim"
+  },
+  "age": {
+   "field": "Age",
+   "blank_pct": 19.2,
+   "distinct": 172,
+   "subject": "victim",
+   "numeric_pct": 100.0,
+   "zero_or_less_pct": 0.1
+  },
+  "race": {
+   "field": "Race",
+   "blank_pct": 5.0,
+   "distinct": 6,
+   "subject": "victim"
+  },
+  "ethnicity": {
+   "field": "Ethnicity",
+   "blank_pct": 82.8,
+   "distinct": 6,
+   "subject": "victim"
+  },
+  "district": {
+   "field": "Old_District",
+   "blank_pct": 12.1,
+   "distinct": 10,
+   "blank_codes": {
+    "N/A": 70379
+   },
+   "values": {
+    "NORTHEAST": 87219,
+    "SOUTHEAST": 80447,
+    "CENTRAL": 66947,
+    "SOUTHERN": 63452,
+    "NORTHERN": 59973,
+    "NORTHWEST": 56957,
+    "SOUTHWEST": 56865,
+    "EASTERN": 49379,
+    "WESTERN": 45173,
+    "OUT OF JURISDICTION": 1
+   }
+  },
+  "lat": {
+   "field": "Latitude",
+   "blank_pct": 0.2,
+   "distinct": 194906,
+   "numeric_pct": 100.0,
+   "zero_pct": 1.0
+  },
+  "lon": {
+   "field": "Longitude",
+   "blank_pct": 0.2,
+   "distinct": 198058,
+   "numeric_pct": 100.0,
+   "zero_pct": 1.0
+  },
+  "premise": {
+   "field": "PremiseType",
+   "blank_pct": 8.0,
+   "distinct": 133
+  }
+ },
+ "candidates": {
+  "id": [
+   "RowID"
+  ],
+  "date": [
+   "CrimeDateTime"
+  ],
+  "code": [
+   "CrimeCode"
+  ],
+  "desc": [
+   "Description"
+  ],
+  "weapon": [
+   "Weapon"
+  ],
+  "sex": [
+   "Gender"
+  ],
+  "age": [
+   "Age"
+  ],
+  "race": [
+   "Race"
+  ],
+  "ethnicity": [
+   "Ethnicity"
+  ],
+  "district": [
+   "New_District",
+   "Old_District"
+  ],
+  "lat": [
+   "Latitude",
+   "lat"
+  ],
+  "lon": [
+   "Longitude",
+   "lon"
+  ],
+  "premise": [
+   "PremiseType"
+  ]
+ },
+ "notes": [
+  "Ethnicity is recorded in Ethnicity, apart from race. Combining them (for example Hispanic of any race first, as the ACS groups do) is a method choice: ask the user, then build the combined column with prepare.py."
+ ],
+ "rejected": [
+  {
+   "role": "district",
+   "field": "New_District",
+   "blank_pct": 89.1,
+   "distinct": 10,
+   "blank_codes": {
+    "N/A": 574358
+   },
+   "values": {
+    "CENTRAL": 10567,
+    "SOUTHEAST": 9213,
+    "SOUTHERN": 8361,
+    "NORTHEAST": 8301,
+    "NORTHERN": 7267,
+    "WESTERN": 6993,
+    "NORTHWEST": 6831,
+    "EASTERN": 6374,
+    "SOUTHWEST": 6360,
+    "OUT OF JURISDICTION": 2
+   },
+   "rejected": true
+  }
+ ],
+ "race": {
+  "field": "Race",
+  "legend_from": null,
+  "values": [
+   {
+    "value": "BLACK_OR_AFRICAN_AMERICAN",
+    "n": 339964,
+    "label": "BLACK_OR_AFRICAN_AMERICAN",
+    "group": "Black",
+    "basis": "label"
+   },
+   {
+    "value": "WHITE",
+    "n": 135113,
+    "label": "WHITE",
+    "group": "White",
+    "basis": "label"
+   },
+   {
+    "value": "UNKNOWN",
+    "n": 132962,
+    "label": "UNKNOWN",
+    "group": "unknown",
+    "basis": "label"
+   },
+   {
+    "value": "",
+    "n": 32544,
+    "label": "(blank)",
+    "group": "unknown",
+    "basis": "blank"
+   },
+   {
+    "value": "ASIAN",
+    "n": 2511,
+    "label": "ASIAN",
+    "group": "Asian",
+    "basis": "label"
+   },
+   {
+    "value": "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+    "n": 1021,
+    "label": "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+    "group": "AIAN",
+    "basis": "label"
+   },
+   {
+    "value": "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER",
+    "n": 622,
+    "label": "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER",
+    "group": "NHPI",
+    "basis": "label"
+   }
+  ],
+  "by_group": {
+   "Black": [
+    "BLACK_OR_AFRICAN_AMERICAN"
+   ],
+   "White": [
+    "WHITE"
+   ],
+   "Asian": [
+    "ASIAN"
+   ],
+   "AIAN": [
+    "AMERICAN_INDIAN_OR_ALASKA_NATIVE"
+   ],
+   "NHPI": [
+    "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER"
+   ]
+  }
+ },
+ "sex": {
+  "field": "Gender",
+  "values": [
+   {
+    "value": "F",
+    "n": 272369,
+    "label": "F",
+    "code": "F"
+   },
+   {
+    "value": "M",
+    "n": 257096,
+    "label": "M",
+    "code": "M"
+   },
+   {
+    "value": "",
+    "n": 95996,
+    "label": "",
+    "code": null
+   },
+   {
+    "value": "U",
+    "n": 12217,
+    "label": "U",
+    "code": null
+   },
+   {
+    "value": "NA",
+    "n": 7059,
+    "label": "NA",
+    "code": null
+   }
+  ],
+  "sex_values": null
+ },
+ "ethnicity": {
+  "field": "Ethnicity",
+  "values": [
+   {
+    "value": "",
+    "n": 534120,
+    "label": "",
+    "code": null
+   },
+   {
+    "value": "NOT_HISPANIC_OR_LATINO",
+    "n": 61267,
+    "label": "NOT_HISPANIC_OR_LATINO",
+    "code": "not Hispanic"
+   },
+   {
+    "value": "UNKNOWN",
+    "n": 38059,
+    "label": "UNKNOWN",
+    "code": "unknown"
+   },
+   {
+    "value": "HISPANIC_OR_LATINO",
+    "n": 10115,
+    "label": "HISPANIC_OR_LATINO",
+    "code": "Hispanic"
+   },
+   {
+    "value": "MIDDLE_EASTERN",
+    "n": 688,
+    "label": "MIDDLE_EASTERN",
+    "code": null
+   },
+   {
+    "value": "EAST_ASIAN",
+    "n": 306,
+    "label": "EAST_ASIAN",
+    "code": null
+   },
+   {
+    "value": "SOUTH_ASIAN",
+    "n": 182,
+    "label": "SOUTH_ASIAN",
+    "code": null
+   }
+  ]
+ }
+}

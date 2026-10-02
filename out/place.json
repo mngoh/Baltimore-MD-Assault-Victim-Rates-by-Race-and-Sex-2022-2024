@@ -1,0 +1,26 @@
+{
+ "query": "Baltimore, MD",
+ "candidates": [
+  {
+   "census_geoid": "16000US2404000",
+   "name": "Baltimore city",
+   "display_name": "Baltimore, MD",
+   "kind": "incorporated place",
+   "population": 584548
+  },
+  {
+   "census_geoid": "05000US24005",
+   "name": "Baltimore County",
+   "display_name": "Baltimore County, MD",
+   "kind": "county",
+   "population": 850737
+  },
+  {
+   "census_geoid": "05000US24510",
+   "name": "Baltimore city",
+   "display_name": "Baltimore city, MD",
+   "kind": "county",
+   "population": 584548
+  }
+ ]
+}

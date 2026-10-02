@@ -1,0 +1,7 @@
+# raw downloads, refetched with sources.py (the legacy file is over GitHub's 100 MB limit); their .source.json records are tracked
+data/raw/*.csv
+# Census Reporter downloads, re-fetched by denominators.py; out/population.json is tracked
+out/cache/
+.claude/
+.DS_Store
+__pycache__/

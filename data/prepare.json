@@ -1,0 +1,70 @@
+{
+ "source": "data/raw/bpd_part1_legacy.csv",
+ "rows_in": 644737,
+ "code_column": "CrimeCode",
+ "kinds": {
+  "simple": [
+   "4E"
+  ],
+  "aggravated": [
+   "4A",
+   "4B",
+   "4C",
+   "4D",
+   "9S",
+   "3"
+  ]
+ },
+ "keep": {},
+ "counts": {
+  "simple": {
+   "rows": 118910,
+   "by_code": {
+    "4E": 118910
+   },
+   "path": "data/bpd_simple.csv"
+  },
+  "aggravated": {
+   "rows": 81388,
+   "by_code": {
+    "4A": 24401,
+    "4C": 24065,
+    "4B": 19021,
+    "4D": 7229,
+    "9S": 6652,
+    "3": 20
+   },
+   "path": "data/bpd_aggravated.csv"
+  }
+ },
+ "race_rule": {
+  "column": "race_group",
+  "hispanic_values": [
+   "HISPANIC_OR_LATINO"
+  ],
+  "from": [
+   "Race",
+   "Ethnicity"
+  ],
+  "note": "Hispanic of any race first, otherwise the recorded race; unknown ethnicity keeps the recorded race"
+ },
+ "district_rule": {
+  "column": "district_geo",
+  "from": [
+   "Latitude",
+   "Longitude"
+  ],
+  "boundaries": {
+   "geojson_url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Police_Districts_New/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+   "name_field": "Dist_Alt",
+   "rename": {
+    "NORTHEASTERN": "NORTHEAST",
+    "NORTHWESTERN": "NORTHWEST",
+    "SOUTHEASTERN": "SOUTHEAST",
+    "SOUTHWESTERN": "SOUTHWEST"
+   },
+   "title_case": false
+  },
+  "located_pct": 98.9
+ }
+}

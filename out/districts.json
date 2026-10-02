@@ -1,0 +1,77 @@
+{
+ "geojson": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Police_Districts_New/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+ "name_field": "Dist_Alt",
+ "title_case": false,
+ "rename": {
+  "NORTHEASTERN": "NORTHEAST",
+  "NORTHWESTERN": "NORTHWEST",
+  "SOUTHEASTERN": "SOUTHEAST",
+  "SOUTHWESTERN": "SOUTHWEST"
+ },
+ "polygons": 9,
+ "points_used": 70229,
+ "points_inside_pct": 100.0,
+ "agreement_pct": 99.1,
+ "one_to_one": true,
+ "mapping": {
+  "CENTRAL": {
+   "data_name": "CENTRAL",
+   "agreement_pct": 99.6,
+   "points": 10484
+  },
+  "EASTERN": {
+   "data_name": "EASTERN",
+   "agreement_pct": 98.6,
+   "points": 6399
+  },
+  "NORTHEASTERN": {
+   "data_name": "NORTHEAST",
+   "agreement_pct": 98.3,
+   "points": 8408
+  },
+  "NORTHERN": {
+   "data_name": "NORTHERN",
+   "agreement_pct": 99.5,
+   "points": 7169
+  },
+  "NORTHWESTERN": {
+   "data_name": "NORTHWEST",
+   "agreement_pct": 99.4,
+   "points": 6854
+  },
+  "SOUTHEASTERN": {
+   "data_name": "SOUTHEAST",
+   "agreement_pct": 99.6,
+   "points": 9135
+  },
+  "SOUTHERN": {
+   "data_name": "SOUTHERN",
+   "agreement_pct": 98.7,
+   "points": 8426
+  },
+  "SOUTHWESTERN": {
+   "data_name": "SOUTHWEST",
+   "agreement_pct": 98.4,
+   "points": 6412
+  },
+  "WESTERN": {
+   "data_name": "WESTERN",
+   "agreement_pct": 99.5,
+   "points": 6937
+  }
+ },
+ "data_names_without_polygon": {},
+ "polygons_without_points": [],
+ "weak": {},
+ "config": {
+  "geojson_url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Police_Districts_New/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+  "name_field": "Dist_Alt",
+  "rename": {
+   "NORTHEASTERN": "NORTHEAST",
+   "NORTHWESTERN": "NORTHWEST",
+   "SOUTHEASTERN": "SOUTHEAST",
+   "SOUTHWESTERN": "SOUTHWEST"
+  },
+  "title_case": false
+ }
+}

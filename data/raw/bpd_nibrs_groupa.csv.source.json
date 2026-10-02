@@ -1,0 +1,8 @@
+{
+ "url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/NIBRS_GroupA_Crime_Data/FeatureServer/0",
+ "platform": "arcgis",
+ "api": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/NIBRS_GroupA_Crime_Data/FeatureServer/0",
+ "where": null,
+ "fetched_at": "2026-10-02T16:16:29",
+ "rows": 274697
+}

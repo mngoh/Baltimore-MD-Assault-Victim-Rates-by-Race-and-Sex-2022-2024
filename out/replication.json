@@ -1,0 +1,140 @@
+{
+ "sources": {
+  "primary": {
+   "label": "Legacy system, 2022 to 2024",
+   "years": 3.0,
+   "rates": {
+    "all": {
+     "Black": 3605,
+     "Hispanic": 2229,
+     "White": 1397,
+     "Asian": 641
+    },
+    "simple": {
+     "Black": 2355,
+     "Hispanic": 1598,
+     "White": 987,
+     "Asian": 454
+    },
+    "aggravated": {
+     "Black": 1250,
+     "Hispanic": 631,
+     "White": 410,
+     "Asian": 187
+    }
+   },
+   "ratios": {
+    "all": {
+     "Hispanic": 1.62,
+     "White": 2.58,
+     "Asian": 5.62
+    },
+    "simple": {
+     "Hispanic": 1.47,
+     "White": 2.39,
+     "Asian": 5.19
+    },
+    "aggravated": {
+     "Hispanic": 1.98,
+     "White": 3.05,
+     "Asian": 6.68
+    }
+   }
+  },
+  "secondary": {
+   "label": "NIBRS, January 2025 to August 2026",
+   "years": 1.6658,
+   "rates": {
+    "all": {
+     "Black": 3523,
+     "Hispanic": 2217,
+     "White": 1229,
+     "Asian": 451
+    },
+    "simple": {
+     "Black": 2422,
+     "Hispanic": 1586,
+     "White": 906,
+     "Asian": 344
+    },
+    "aggravated": {
+     "Black": 1101,
+     "Hispanic": 630,
+     "White": 322,
+     "Asian": 107
+    }
+   },
+   "ratios": {
+    "all": {
+     "Hispanic": 1.59,
+     "White": 2.87,
+     "Asian": 7.81
+    },
+    "simple": {
+     "Hispanic": 1.53,
+     "White": 2.67,
+     "Asian": 7.04
+    },
+    "aggravated": {
+     "Hispanic": 1.75,
+     "White": 3.42,
+     "Asian": 10.29
+    }
+   }
+  }
+ },
+ "definition_notes": "Legacy SRS 2022 to 2024 against NIBRS January 2025 to August 2026 (September 2026 left out for reporting lag). 13B simple assault matched to 4E common assault; 13A aggravated assault to 4A to 4D plus shootings. Women victims, Hispanic of any race first by the ethnicity column, otherwise the recorded race, in both. A woman listed under both 13A and 13B in one case is counted once in the total, as aggravated (1 in this period). Neither file records victim type, so assaults on officers are in both.",
+ "comparison": {
+  "all": {
+   "Hispanic": {
+    "first": 1.62,
+    "second": 1.59,
+    "change_pct": -2
+   },
+   "White": {
+    "first": 2.58,
+    "second": 2.87,
+    "change_pct": 11
+   },
+   "Asian": {
+    "first": 5.62,
+    "second": 7.81,
+    "change_pct": 39
+   }
+  },
+  "simple": {
+   "Hispanic": {
+    "first": 1.47,
+    "second": 1.53,
+    "change_pct": 4
+   },
+   "White": {
+    "first": 2.39,
+    "second": 2.67,
+    "change_pct": 12
+   },
+   "Asian": {
+    "first": 5.19,
+    "second": 7.04,
+    "change_pct": 36
+   }
+  },
+  "aggravated": {
+   "Hispanic": {
+    "first": 1.98,
+    "second": 1.75,
+    "change_pct": -12
+   },
+   "White": {
+    "first": 3.05,
+    "second": 3.42,
+    "change_pct": 12
+   },
+   "Asian": {
+    "first": 6.68,
+    "second": 10.29,
+    "change_pct": 54
+   }
+  }
+ }
+}

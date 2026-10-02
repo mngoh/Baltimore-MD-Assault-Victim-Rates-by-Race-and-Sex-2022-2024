@@ -1,0 +1,73 @@
+{
+ "_status": "Draft from /new-city. The three decisions are null: the question (groups, focus), what counts (codes, kinds, flags) and the window. race_map_by_group becomes race_map for the chosen groups only.",
+ "title": null,
+ "place": {
+  "name": "Baltimore",
+  "short": null,
+  "census_geoid": "16000US2404000"
+ },
+ "acs_release": "acs2024_5yr",
+ "window": null,
+ "event": null,
+ "incidents": [
+  {
+   "path": "data/raw/bpd_part1_legacy.csv",
+   "kind": "all"
+  }
+ ],
+ "columns": {
+  "id": "RowID",
+  "date": "CrimeDateTime",
+  "race": "Race",
+  "sex": "Gender",
+  "age": "Age",
+  "lat": "Latitude",
+  "lon": "Longitude",
+  "district": "Old_District",
+  "premise": "PremiseType",
+  "weapon": "Weapon",
+  "code": "CrimeCode"
+ },
+ "race_map_by_group": {
+  "Black": [
+   "BLACK_OR_AFRICAN_AMERICAN"
+  ],
+  "White": [
+   "WHITE"
+  ],
+  "Asian": [
+   "ASIAN"
+  ],
+  "AIAN": [
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE"
+  ],
+  "NHPI": [
+   "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER"
+  ]
+ },
+ "race_left_out": {
+  "UNKNOWN": "UNKNOWN (unknown)",
+  "": "(blank) (unknown)"
+ },
+ "groups": null,
+ "focus": null,
+ "flags": null,
+ "districts": {
+  "geojson_url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Police_Districts_New/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+  "name_field": "Dist_Alt",
+  "rename": {
+   "NORTHEASTERN": "NORTHEAST",
+   "NORTHWESTERN": "NORTHWEST",
+   "SOUTHEASTERN": "SOUTHEAST",
+   "SOUTHWESTERN": "SOUTHWEST"
+  },
+  "title_case": false
+ },
+ "sources": [
+  "Part 1 Crime Data (Legacy SRS) (baltimore_city)",
+  "US Census Bureau ACS 2020 to 2024 via Census Reporter"
+ ],
+ "source_urls": [
+  "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Part1_Crime_Beta/FeatureServer/0"
+ ]
+}

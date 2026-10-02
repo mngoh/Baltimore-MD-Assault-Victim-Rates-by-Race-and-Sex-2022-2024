@@ -1,0 +1,53 @@
+{
+ "sources": {
+  "primary": {
+   "label": "Legacy system, 2022 to 2024",
+   "years": 3.0,
+   "counts": {
+    "all": {
+     "Black": 20233,
+     "Hispanic": 1541,
+     "White": 3184,
+     "Asian": 151
+    },
+    "simple": {
+     "Black": 13219,
+     "Hispanic": 1105,
+     "White": 2250,
+     "Asian": 107
+    },
+    "aggravated": {
+     "Black": 7014,
+     "Hispanic": 436,
+     "White": 934,
+     "Asian": 44
+    }
+   }
+  },
+  "secondary": {
+   "label": "NIBRS, January 2025 to August 2026",
+   "years": 1.6658,
+   "counts": {
+    "all": {
+     "Black": 10979,
+     "Hispanic": 851,
+     "White": 1555,
+     "Asian": 59
+    },
+    "simple": {
+     "Black": 7548,
+     "Hispanic": 609,
+     "White": 1147,
+     "Asian": 45
+    },
+    "aggravated": {
+     "Black": 3432,
+     "Hispanic": 242,
+     "White": 408,
+     "Asian": 14
+    }
+   }
+  }
+ },
+ "definition_notes": "Legacy SRS 2022 to 2024 against NIBRS January 2025 to August 2026 (September 2026 left out for reporting lag). 13B simple assault matched to 4E common assault; 13A aggravated assault to 4A to 4D plus shootings. Women victims, Hispanic of any race first by the ethnicity column, otherwise the recorded race, in both. A woman listed under both 13A and 13B in one case is counted once in the total, as aggravated (1 in this period). Neither file records victim type, so assaults on officers are in both."
+}

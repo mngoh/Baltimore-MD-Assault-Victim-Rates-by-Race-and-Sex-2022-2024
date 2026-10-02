@@ -1,0 +1,322 @@
+{
+ "platform": "arcgis",
+ "url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Part1_Crime_Beta/FeatureServer/0",
+ "api": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Part1_Crime_Beta/FeatureServer/0",
+ "title": "Part 1 Crime Data (Legacy SRS)",
+ "publisher": "baltimore_city",
+ "updated": "2024-12-30",
+ "description": "This dataset represents the location and characteristics of major (Part 1) crime against persons such as homicide, shooting, robbery, aggravated assault etc. within the City of Baltimore. Data is updated weekly. Note: This dataset contains crime data up to 12/31/2024 under the Summary Reporting System (SRS). SRS collected data under a hierarchy rule that reported only the most serious offense in an incident. However, according to data, 10.6% of crimes committed include additional offenses. For more information, visit: https://www.baltimorepolice.org/nibrs If you have any questions or need to r",
+ "columns": [
+  {
+   "field": "RowID",
+   "name": "RowID",
+   "type": "oid",
+   "description": "",
+   "legend": {},
+   "subject": null
+  },
+  {
+   "field": "CCNumber",
+   "name": "CCNumber",
+   "type": "text",
+   "description": "Unique identifier for the record.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "CrimeDateTime",
+   "name": "CrimeDateTime",
+   "type": "date",
+   "description": "Date and time when the crime occurred.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "CrimeCode",
+   "name": "CrimeCode",
+   "type": "text",
+   "description": "Code assigned to categorize the crime type.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Description",
+   "name": "Description",
+   "type": "text",
+   "description": "Type of crime incident reported.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Inside_Outside",
+   "name": "Inside_Outside",
+   "type": "text",
+   "description": "Indicates whether the crime occurred indoors or outdoors.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Weapon",
+   "name": "Weapon",
+   "type": "text",
+   "description": "Indicates if a weapon was involved in the crime incident.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Post",
+   "name": "Post",
+   "type": "text",
+   "description": "Police post (sub-unit of geography under districts) under the current mapping scheme.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Gender",
+   "name": "Gender",
+   "type": "text",
+   "description": "Sex or gender of the victim.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": "victim"
+  },
+  {
+   "field": "Age",
+   "name": "Age",
+   "type": "text",
+   "description": "Age of the victim.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": "victim"
+  },
+  {
+   "field": "Race",
+   "name": "Race",
+   "type": "text",
+   "description": "Race of the victim.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": "victim"
+  },
+  {
+   "field": "Ethnicity",
+   "name": "Ethnicity",
+   "type": "text",
+   "description": "Ethnicity of the victim.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": "victim"
+  },
+  {
+   "field": "Location",
+   "name": "Location",
+   "type": "text",
+   "description": "Address or general location where the incident occurred.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Old_District",
+   "name": "Old_District",
+   "type": "text",
+   "description": "Police district under the previous mapping scheme.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "New_District",
+   "name": "New_District",
+   "type": "text",
+   "description": "Police district under the current mapping scheme.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Neighborhood",
+   "name": "Neighborhood",
+   "type": "text",
+   "description": "Neighborhood where the incident occurred.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Latitude",
+   "name": "Latitude",
+   "type": "text",
+   "description": "Latitude of the incident's geographic location.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Longitude",
+   "name": "Longitude",
+   "type": "text",
+   "description": "Longitude of the incident's geographic location.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "GeoLocation",
+   "name": "GeoLocation",
+   "type": "text",
+   "description": "Concatenation of the Latitude and Longitude fields.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "PremiseType",
+   "name": "PremiseType",
+   "type": "text",
+   "description": "Type of premise where the incident occurred (residence, business, vacant building).",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  },
+  {
+   "field": "Total_Incidents",
+   "name": "Total_Incidents",
+   "type": "number",
+   "description": "Total number of incidents occurring for the reported crime.",
+   "legend": {},
+   "from_item_dictionary": true,
+   "subject": null
+  }
+ ],
+ "geometry": "esriGeometryPoint",
+ "max_records": 2000,
+ "rows": 644737,
+ "roles": {
+  "id": "RowID",
+  "date": "CrimeDateTime",
+  "code": "CrimeCode",
+  "desc": "Description",
+  "weapon": "Weapon",
+  "sex": "Gender",
+  "age": "Age",
+  "race": "Race",
+  "ethnicity": "Ethnicity",
+  "district": "New_District",
+  "lat": "Latitude",
+  "lon": "Longitude",
+  "premise": "PremiseType"
+ },
+ "candidates": {
+  "id": [
+   "RowID"
+  ],
+  "date": [
+   "CrimeDateTime"
+  ],
+  "code": [
+   "CrimeCode"
+  ],
+  "desc": [
+   "Description"
+  ],
+  "weapon": [
+   "Weapon"
+  ],
+  "sex": [
+   "Gender"
+  ],
+  "age": [
+   "Age"
+  ],
+  "race": [
+   "Race"
+  ],
+  "ethnicity": [
+   "Ethnicity"
+  ],
+  "district": [
+   "New_District",
+   "Old_District"
+  ],
+  "lat": [
+   "Latitude"
+  ],
+  "lon": [
+   "Longitude"
+  ],
+  "premise": [
+   "PremiseType"
+  ]
+ },
+ "people": [
+  {
+   "field": "Race",
+   "role": "race",
+   "subject": "victim"
+  },
+  {
+   "field": "Ethnicity",
+   "role": "ethnicity",
+   "subject": "victim"
+  },
+  {
+   "field": "Gender",
+   "role": "sex",
+   "subject": "victim"
+  },
+  {
+   "field": "Age",
+   "role": "age",
+   "subject": "victim"
+  }
+ ],
+ "values": {
+  "Race": {
+   "BLACK_OR_AFRICAN_AMERICAN": 339964,
+   "WHITE": 135113,
+   "UNKNOWN": 132962,
+   "None": 32544,
+   "ASIAN": 2511,
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE": 1021,
+   "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER": 622
+  },
+  "Ethnicity": {
+   "None": 527265,
+   "NOT_HISPANIC_OR_LATINO": 61267,
+   "UNKNOWN": 38059,
+   "HISPANIC_OR_LATINO": 10115,
+   " ": 6855,
+   "MIDDLE_EASTERN": 688,
+   "EAST_ASIAN": 306,
+   "SOUTH_ASIAN": 182
+  },
+  "Gender": {
+   "F": 272369,
+   "M": 257096,
+   "None": 95996,
+   "U": 12217,
+   "NA": 7059
+  }
+ },
+ "date_range": {
+  "field": "CrimeDateTime",
+  "lo": "1023-01-26",
+  "hi": "2024-12-29"
+ },
+ "verdict": {
+  "race_of": "victim",
+  "usable_for_victims": true,
+  "notes": [
+   "Ethnicity is its own column (Ethnicity): Hispanic victims are not in the race codes. Combining them is a method choice for the user.",
+   "Last record is 2024-12-29: this file may have been replaced by a newer one (a records-system change?)."
+  ]
+ }
+}
