@@ -1,6 +1,6 @@
 # Assault victims in Baltimore
 
-Who gets assaulted in Baltimore, as rates rather than counts: victims of common and aggravated assault reported by the Baltimore Police Department, 2022 to 2024, by race and sex, against ACS population. It is the Baltimore companion to the Los Angeles ([LA-Crime](https://github.com/mngoh/LA-Crime)) and DC (DC-Assault) analyses and uses the same method, packaged as [disparity-kit](https://github.com/mngoh/disparity-kit). It is the first city started from a name with the kit's `/new-city` skill.
+Who gets assaulted in Baltimore, as rates rather than counts: victims of common and aggravated assault reported by the Baltimore Police Department, 2022 to 2024, by race and sex, against ACS population. It is the Baltimore companion to the Los Angeles ([Los-Angeles-CA-Assault-Victim-Rates-by-Race-and-Sex-2020-2023](https://github.com/mngoh/Los-Angeles-CA-Assault-Victim-Rates-by-Race-and-Sex-2020-2023)) and DC (DC-Assault) analyses and uses the same method, packaged as [disparity-kit](https://github.com/mngoh/disparity-kit). It is the first city started from a name with the kit's `/new-city` skill.
 
 The full page is `index.html`.
 
