@@ -1,163 +1,167 @@
 {
- "title": "Assault victims in Baltimore",
- "author": "Martin Ngoh",
- "place": {
-  "name": "Baltimore",
-  "short": "Baltimore",
-  "census_geoid": "16000US2404000"
- },
- "acs_release": "acs2024_5yr",
- "window": {
-  "start": "2022-01-01",
-  "end": "2024-12-31"
- },
- "event": {
-  "noun": "assault",
-  "plural": "assaults",
-  "verb": "assaulted"
- },
- "incidents": [
-  {
-   "path": "data/bpd_simple.csv",
-   "kind": "simple"
+  "title": "Assault victims in Baltimore",
+  "author": "Martin Ngoh",
+  "place": {
+    "name": "Baltimore",
+    "short": "Baltimore",
+    "census_geoid": "16000US2404000"
   },
-  {
-   "path": "data/bpd_aggravated.csv",
-   "kind": "aggravated"
-  }
- ],
- "kind_labels": {
-  "simple": "Common assault",
-  "aggravated": "Aggravated assault"
- },
- "columns": {
-  "id": "RowID",
-  "date": "CrimeDateTime",
-  "race": "race_group",
-  "sex": "Gender",
-  "age": "Age",
-  "lat": "Latitude",
-  "lon": "Longitude",
-  "district": "district_geo",
-  "premise": "PremiseType",
-  "weapon": "Weapon",
-  "code": "CrimeCode"
- },
- "race_map": {
-  "BLACK_OR_AFRICAN_AMERICAN": "Black",
-  "WHITE": "White",
-  "ASIAN": "Asian",
-  "H": "Hispanic"
- },
- "groups": [
-  "Black",
-  "Hispanic",
-  "White",
-  "Asian"
- ],
- "focus": {
-  "group": "Black",
-  "sex": "F",
-  "label": "Black women"
- },
- "districts": {
-  "geojson_url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Police_Districts_New/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
-  "name_field": "Dist_Alt",
-  "rename": {
-   "NORTHEASTERN": "NORTHEAST",
-   "NORTHWESTERN": "NORTHWEST",
-   "SOUTHEASTERN": "SOUTHEAST",
-   "SOUTHWESTERN": "SOUTHWEST"
+  "acs_release": "acs2024_5yr",
+  "window": {
+    "start": "2022-01-01",
+    "end": "2024-12-31"
   },
-  "title_case": false,
-  "label": "police district"
- },
- "sources": [
-  "Baltimore Police Department, Part 1 Crime Data (Legacy SRS), Open Baltimore",
-  "Baltimore Police Department, NIBRS Group A Crime Data, Open Baltimore (replication)",
-  "Baltimore City police districts, 2023 boundaries, Open Baltimore",
-  "US Census Bureau ACS 2020 to 2024 five-year estimates via Census Reporter"
- ],
- "links": {
-  "code": "https://github.com/mngoh/Baltimore-Assault-Victims",
-  "home": "https://martinngoh.com"
- },
- "weapon_classes": [
-  {
-   "label": "Firearm",
-   "keywords": [
-    "FIREAR",
-    "HANDGUN",
-    "RIFLE",
-    "SHOTGUN",
-    "AUTOMATIC"
-   ]
+  "event": {
+    "noun": "assault",
+    "plural": "assaults",
+    "verb": "assaulted"
   },
-  {
-   "label": "Knife or cutting",
-   "keywords": [
-    "KNIFE",
-    "CUTTIN"
-   ]
+  "incidents": [
+    {
+      "path": "data/bpd_simple.csv",
+      "kind": "simple"
+    },
+    {
+      "path": "data/bpd_aggravated.csv",
+      "kind": "aggravated"
+    }
+  ],
+  "kind_labels": {
+    "simple": "Common assault",
+    "aggravated": "Aggravated assault"
   },
-  {
-   "label": "Blunt object or vehicle",
-   "keywords": [
-    "BLUNT",
-    "MOTOR_VEHIC"
-   ]
+  "columns": {
+    "id": "RowID",
+    "date": "CrimeDateTime",
+    "race": "race_group",
+    "sex": "Gender",
+    "age": "Age",
+    "lat": "Latitude",
+    "lon": "Longitude",
+    "district": "district_geo",
+    "premise": "PremiseType",
+    "weapon": "Weapon",
+    "code": "CrimeCode"
   },
-  {
-   "label": "Hands, fists, feet",
-   "keywords": [
-    "PERSONAL_WEA",
-    "HANDS",
-    "ASPHYXIATION"
-   ]
-  }
- ],
- "extra_caveats": [
-  [
-   "Policing and reporting",
-   "Police data reflects where officers patrol and who calls them. This data cannot separate more policing or more reporting from more assaults."
+  "race_map": {
+    "BLACK_OR_AFRICAN_AMERICAN": "Black",
+    "WHITE": "White",
+    "ASIAN": "Asian",
+    "H": "Hispanic"
+  },
+  "groups": [
+    "Black",
+    "Hispanic",
+    "White",
+    "Asian"
   ],
-  [
-   "Hispanic ethnicity is often missing",
-   "Baltimore records ethnicity apart from race, and began recording it in June 2021. It is unknown or blank for 41.6% of women victims. 41.9% of women recorded as White have unknown ethnicity, and where it is known, 18.1% of them are Hispanic. They are counted as White here. If they were Hispanic, Black women's rate would be 0.82x Hispanic women's instead of 1.62x, and 4.85x White women's instead of 2.58x. 934 women with unknown race but Hispanic ethnicity are counted as Hispanic."
+  "focus": {
+    "group": "Black",
+    "sex": "F",
+    "label": "Black women"
+  },
+  "districts": {
+    "geojson_url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/Police_Districts_New/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+    "name_field": "Dist_Alt",
+    "rename": {
+      "NORTHEASTERN": "NORTHEAST",
+      "NORTHWESTERN": "NORTHWEST",
+      "SOUTHEASTERN": "SOUTHEAST",
+      "SOUTHWESTERN": "SOUTHWEST"
+    },
+    "title_case": false,
+    "label": "police district"
+  },
+  "sources": [
+    "Baltimore Police Department, Part 1 Crime Data (Legacy SRS), Open Baltimore",
+    "Baltimore Police Department, NIBRS Group A Crime Data, Open Baltimore (replication)",
+    "Baltimore City police districts, 2023 boundaries, Open Baltimore",
+    "US Census Bureau ACS 2020 to 2024 five-year estimates via Census Reporter"
   ],
-  [
-   "Missing race",
-   "523 women victims (2.0%) have unknown race. It is most common in the Southern district (3.0%) and least in the Western district (1.2%), and it is more common where fewer Black women live (correlation -0.76 across districts). That understates other groups' rates slightly, which widens the gap. Spread over the four groups like known victims of the same assault type in the same district, the ratios move to 1.61x Hispanic, 2.57x White, 5.61x Asian from 1.62x, 2.58x, 5.62x."
+  "links": {
+    "code": "https://github.com/mngoh/Baltimore-Assault-Victims",
+    "home": "https://martinngoh.com"
+  },
+  "weapon_classes": [
+    {
+      "label": "Firearm",
+      "keywords": [
+        "FIREAR",
+        "HANDGUN",
+        "RIFLE",
+        "SHOTGUN",
+        "AUTOMATIC"
+      ]
+    },
+    {
+      "label": "Knife or cutting",
+      "keywords": [
+        "KNIFE",
+        "CUTTIN"
+      ]
+    },
+    {
+      "label": "Blunt object or vehicle",
+      "keywords": [
+        "BLUNT",
+        "MOTOR_VEHIC"
+      ]
+    },
+    {
+      "label": "Hands, fists, feet",
+      "keywords": [
+        "PERSONAL_WEA",
+        "HANDS",
+        "ASPHYXIATION"
+      ]
+    }
   ],
-  [
-   "Districts are placed by location",
-   "Baltimore redrew its police districts in 2023, and the data names the old district before mid-2023 and the new one after. Here every assault is placed in the 2023 district that holds its coordinates, for all three years, so one map is used throughout. 99.9% of victims are placed; 65 have no usable coordinates."
+  "extra_caveats": [
+    [
+      "What this number measures",
+      "Police reports, not how often women are hurt. In the national victimization survey, which counts assaults whether or not police learned of them, Black and White women describe being assaulted at about the same rate nationally and about 1.5 to 2 times in large cities. A follow-up (Police-Records-vs-Survey-Assault-Victims-by-Race-and-Sex-2015-2025, on GitHub) tested why police records differ more: not reporting rates, not (or only a little) how police write up a call, not the same women counted repeatedly, but largely where assaults happen and who calls. Hospital emergency departments, which do not depend on a call to police, see a gap like the police one (about 4.6 times for women in 2021 to 2022), which points to the survey undercounting assaults on Black women."
+    ],
+    [
+      "Policing and reporting",
+      "Police data reflects where officers patrol and who calls them. This data cannot separate more policing or more reporting from more assaults."
+    ],
+    [
+      "Hispanic ethnicity is often missing",
+      "Baltimore records ethnicity apart from race, and began recording it in June 2021. It is unknown or blank for 41.6% of women victims. 41.9% of women recorded as White have unknown ethnicity, and where it is known, 18.1% of them are Hispanic. They are counted as White here. If they were Hispanic, Black women's rate would be 0.82x Hispanic women's instead of 1.62x, and 4.85x White women's instead of 2.58x. 934 women with unknown race but Hispanic ethnicity are counted as Hispanic."
+    ],
+    [
+      "Missing race",
+      "523 women victims (2.0%) have unknown race. It is most common in the Southern district (3.0%) and least in the Western district (1.2%), and it is more common where fewer Black women live (correlation -0.76 across districts). That understates other groups' rates slightly, which widens the gap. Spread over the four groups like known victims of the same assault type in the same district, the ratios move to 1.61x Hispanic, 2.57x White, 5.61x Asian from 1.62x, 2.58x, 5.62x."
+    ],
+    [
+      "Districts are placed by location",
+      "Baltimore redrew its police districts in 2023, and the data names the old district before mid-2023 and the new one after. Here every assault is placed in the 2023 district that holds its coordinates, for all three years, so one map is used throughout. 99.9% of victims are placed; 65 have no usable coordinates."
+    ],
+    [
+      "Neighborhood is not neutral",
+      "Police district and tract poverty, income, unemployment and housing are shaped by segregation and disinvestment. Here the adjusted gap (2.84x) is wider than the crude one (2.62x), so these controls do not account for it. Where a control narrows a gap, the gap has been located, not explained away."
+    ],
+    [
+      "Intimate partner assault cannot be separated",
+      "No code or field marks assaults by a partner, so the partner test from the Los Angeles and DC analyses cannot run. In both, partner assault was close to half of assaults on women."
+    ],
+    [
+      "Officers are not separated",
+      "The data does not record the victim type, so assaults on police officers are counted with everyone else's. Los Angeles and DC left them out."
+    ],
+    [
+      "What is counted",
+      "Common assault (code 4E) and aggravated assault (codes 4A, 4B, 4C, 4D, 9S, 3), which includes 1,739 non-fatal shootings Baltimore codes apart from aggravated assault. Homicides are left out. 148 American Indian or Alaska Native victims and 76 Native Hawaiian or Pacific Islander victims are counted in the totals but not compared, because counts this small give unstable rates. 396 women victims with unknown age fall out of the age test only. When an assault has several victims, each is counted."
+    ],
+    [
+      "Window and population",
+      "Victims cover January 2022 to December 2024: full years with ethnicity recorded, before Baltimore police moved to NIBRS in January 2025. The population is the ACS 2024 5-year estimate, an average over 2020 to 2024."
+    ],
+    [
+      "Least stable comparison",
+      "The Asian comparison moved +39% between the legacy system (2022 to 2024) and NIBRS (January 2025 to August 2026) (+54% for aggravated assault), against 11% or less for the others. It rests on 151 Asian women victims in 2022 to 2024 and 59 Asian women victims in January 2025 to August 2026, so it is left out of the headline."
+    ]
   ],
-  [
-   "Neighborhood is not neutral",
-   "Police district and tract poverty, income, unemployment and housing are shaped by segregation and disinvestment. Here the adjusted gap (2.84x) is wider than the crude one (2.62x), so these controls do not account for it. Where a control narrows a gap, the gap has been located, not explained away."
-  ],
-  [
-   "Intimate partner assault cannot be separated",
-   "No code or field marks assaults by a partner, so the partner test from the Los Angeles and DC analyses cannot run. In both, partner assault was close to half of assaults on women."
-  ],
-  [
-   "Officers are not separated",
-   "The data does not record the victim type, so assaults on police officers are counted with everyone else's. Los Angeles and DC left them out."
-  ],
-  [
-   "What is counted",
-   "Common assault (code 4E) and aggravated assault (codes 4A, 4B, 4C, 4D, 9S, 3), which includes 1,739 non-fatal shootings Baltimore codes apart from aggravated assault. Homicides are left out. 148 American Indian or Alaska Native victims and 76 Native Hawaiian or Pacific Islander victims are counted in the totals but not compared, because counts this small give unstable rates. 396 women victims with unknown age fall out of the age test only. When an assault has several victims, each is counted."
-  ],
-  [
-   "Window and population",
-   "Victims cover January 2022 to December 2024: full years with ethnicity recorded, before Baltimore police moved to NIBRS in January 2025. The population is the ACS 2024 5-year estimate, an average over 2020 to 2024."
-  ],
-  [
-   "Least stable comparison",
-   "The Asian comparison moved +39% between the legacy system (2022 to 2024) and NIBRS (January 2025 to August 2026) (+54% for aggravated assault), against 11% or less for the others. It rests on 151 Asian women victims in 2022 to 2024 and 59 Asian women victims in January 2025 to August 2026, so it is left out of the headline."
-  ]
- ],
- "question": "Are Black women in Baltimore assaulted at a higher rate than Hispanic, White and Asian women, and do the plain explanations account for it?",
- "headline": "Black women in Baltimore are assaulted at about 2.5 to 3 times the rate of White women, and age, police district and neighborhood do not explain it. How they compare with Hispanic women cannot be settled: ethnicity is unknown for 42% of women victims."
+  "question": "Are Black women in Baltimore assaulted at a higher rate than Hispanic, White and Asian women, and do the plain explanations account for it?",
+  "headline": "Black women in Baltimore are assaulted at about 2.5 to 3 times the rate of White women, and age, police district and neighborhood do not explain it. How they compare with Hispanic women cannot be settled: ethnicity is unknown for 42% of women victims."
 }
