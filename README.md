@@ -9,7 +9,7 @@ The full page is `index.html`.
 Every number below is generated from `out/results.json`, `out/baltimore_checks.json` and `out/replication.json`.
 
 <!-- results:start -->
-**Black women in Baltimore are assaulted at about 2.5 to 3 times the rate of White women, and age, police district and neighborhood do not explain it. How they compare with Hispanic women cannot be settled: ethnicity is unknown for 42% of women victims.**
+**Black women's reported assault rate in Baltimore is about 2.5 to 3 times White women's, and age, police district and neighborhood do not explain it. How it compares with Hispanic women's cannot be settled: ethnicity is unknown for 42% of women victims.**
 
 Rates per 100,000 residents a year, 2022-01-01 to 2024-12-31:
 
@@ -43,7 +43,7 @@ Replication: Hispanic 1.62x then 1.59x; White 2.58x then 2.87x; Asian 5.62x then
 
 Caveats:
 
-- This shows what, not why: The data says Black women are assaulted at a higher rate. It does not say why. Nothing here measures causes, offenders or circumstances.
+- This shows what, not why: The data says the reported assault rate for Black women is higher. It does not say why. Nothing here measures causes, offenders or circumstances.
 - Reported crimes only: Every number is a report that reached the police. Willingness to report, and recording practice, differ by group, area and time.
 - Reports, not people: Rates count reports. Someone assaulted twice counts twice, so a rate is not the share of people assaulted.
 - Exposure is not population: Rates divide by where people live, not where they spend time.
